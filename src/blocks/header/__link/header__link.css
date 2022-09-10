@@ -1,0 +1,28 @@
+.header__link{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #A9A9A9;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0 0 46px 24px;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header__link:visited {
+  color: #A9A9A9;
+  text-decoration: none;
+}
+
+.header__link:visited:hover{
+  color: #FFFFFF;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,13 @@
+.App {
+  background-color: #000000;
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  color: #FFFFFF;
+  font-family: 'Inter', Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+  .App {
+    /* max-width: 320px; */
+  }
+}
