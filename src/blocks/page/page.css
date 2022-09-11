@@ -1,9 +1,9 @@
 .App {
   background-color: #000000;
-  /* max-width: 1280px; */
+  height: 100%;
   margin: 0 auto;
-  color: #FFFFFF;
-  font-family: 'Inter', Helvetica, sans-serif;
+  color: #ffffff;
+  font-family: "Inter", Helvetica, sans-serif;
 }
 
 @media screen and (max-width: 767px) {

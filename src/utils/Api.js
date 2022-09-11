@@ -7,22 +7,18 @@ class Api {
   getCards() {
     return fetch(`${this._url}/cards`, {
       headers: this._headers,
-    })
-    .then(this._checkError);
-
+    }).then(this._checkError);
   }
 
-  getUserInfo(){
+  getUserInfo() {
     return fetch(`${this._url}/users/me`, {
       method: "GET",
-      headers: this._headers
-    })
-    .then(this._checkError);
-
+      headers: this._headers,
+    }).then(this._checkError);
   }
 
   setCard(card) {
-    return fetch (`${this._url}/cards`, {
+    return fetch(`${this._url}/cards`, {
       method: "POST",
       headers: this._headers,
       body: JSON.stringify({
@@ -33,23 +29,23 @@ class Api {
   }
 
   editProfile(data) {
-    return fetch (`${this._url}/users/me`, {
+    return fetch(`${this._url}/users/me`, {
       method: "PATCH",
       headers: this._headers,
       body: JSON.stringify({
         name: data.name,
         about: data.about,
-      })
+      }),
     }).then(this._checkError);
   }
 
   editAvatar(link) {
-    return fetch (`${this._url}/users/me/avatar`, {
+    return fetch(`${this._url}/users/me/avatar`, {
       method: "PATCH",
       headers: this._headers,
       body: JSON.stringify({
         avatar: link,
-      })
+      }),
     }).then(this._checkError);
   }
 
@@ -57,12 +53,11 @@ class Api {
     return fetch(`${this._url}/cards/${cardId}/likes`, {
       method: isLiked ? "DELETE" : "PUT",
       headers: this._headers,
-    })
-    .then(this._checkError);
+    }).then(this._checkError);
   }
 
   deleteCard(id) {
-    return fetch (`${this._url}/cards/${id}`, {
+    return fetch(`${this._url}/cards/${id}`, {
       method: "DELETE",
       headers: this._headers,
     }).then(this._checkError);
@@ -76,7 +71,11 @@ class Api {
   }
 }
 
-const readyApi = new Api ({url: 'https://mesto.nomoreparties.co/v1/cohort-45', 
-headers:{authorization: 'de4ccc24-3897-4b25-93ca-7c2376f1a4ac',
-"Content-Type": "application/json",}})
- export default readyApi;
+const readyApi = new Api({
+  url: "https://mesto.nomoreparties.co/v1/cohort-45",
+  headers: {
+    authorization: "de4ccc24-3897-4b25-93ca-7c2376f1a4ac",
+    "Content-Type": "application/json",
+  },
+});
+export default readyApi;

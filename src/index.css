@@ -64,13 +64,14 @@
 @import url(./blocks/infoTooltip-popup/__exit/infoTooltip-popup__exit.css);
 @import url(./blocks/infoTooltip-popup/__title/infoTooltip-popup__title.css);
 @import url(./blocks/infoTooltip-popup/__image/infoTooltip-popup__image.css);
+@import url(./blocks/infoTooltip-popup/__image/infoTooltip-popup__image_type_error.css);
+@import url(./blocks/infoTooltip-popup/__image/infoTooltip-popup__image_type_acept.css);
 
 @import url(./blocks/bad-popup/bad-popup.css);
 @import url(./blocks/bad-popup/__container/bad-popup__container.css);
 @import url(./blocks/bad-popup/__exit/bad-popup__exit.css);
 @import url(./blocks/bad-popup/__title/bad-popup__title.css);
 @import url(./blocks/bad-popup/__image/bad-popup__image.css);
-
 
 @import url(./blocks/popup/__inputs/popup__inputs.css);
 @import url(./blocks/popup/__input/popup__input.css);
