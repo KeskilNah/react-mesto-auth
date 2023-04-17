@@ -47,7 +47,7 @@ function App() {
             setLoggedIn(true);
             setCurrentUserEmail(localStorage.getItem("email"));
             history.push("./");
-          }
+          } 
         })
         .catch((e) => console.log(`ошибка${e}`));
     }
@@ -56,6 +56,9 @@ function App() {
   useEffect(() => {
     if (loggedIn) {
       history.push("./");
+    }
+    else {
+      history.push("/sign-in");
     }
   }, [history, loggedIn]);
 
