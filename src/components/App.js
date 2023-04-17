@@ -59,6 +59,7 @@ function App() {
     }
     else {
       history.push("/sign-in");
+      console.log("asdasd")
     }
   }, [history, loggedIn]);
 
